@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rotation Calculator</title>
+  <style>
+    body { font-family: Arial; padding: 2em; max-width: 600px; margin: auto; }
+    input, button { margin: 0.5em 0; padding: 0.5em; width: 100%; }
+    .results { margin-top: 1em; }
+    
+    .logo {
+        display: block;
+        margin: 0 auto 1em auto;
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        }
+
+  </style>
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo" class="logo">
+
+  <h2>Rotation Calculator</h2>
+
+  <label>Start Time (e.g. 1012):</label>
+  <input type="text" id="startTime" placeholder="1012">
+
+  <label>End Time (e.g. 1120):</label>
+  <input type="text" id="endTime" placeholder="1120">
+
+  <label>Number of Rotations:</label>
+  <input type="number" id="rotations" placeholder="3">
+
+  <button onclick="calculateRotations()">Calculate</button>
+
+  <div class="results" id="results"></div>
+
+  <script src="app.js"></script>
+</body>
+<footer style="margin-top: 2em; text-align: center; font-size: 0.9em; color: #555;">
+    View the source on 
+    <a href="https://github.com/Gantline-Enterprises/kn-edu-rotation" target="_blank" style="color: #0072ce; text-decoration: none;">
+      GitHub
+    </a>
+  </footer>  
+</html>

@@ -29,7 +29,8 @@ function parseTime(timeStr) {
     for (let i = 0; i < numRotations; i++) {
       const rotStart = start + i * rotationLength;
       const rotEnd = start + (i + 1) * rotationLength;
-      resultHTML += `<li>${formatTime(Math.floor(rotStart))} to ${formatTime(Math.floor(rotEnd))}</li>`;
+      const rotDur = Math.floor(rotEnd) - Math.floor(rotStart);
+      resultHTML += `<li>${formatTime(Math.floor(rotStart))} to ${formatTime(Math.floor(rotEnd))} (${rotDur} minutes long)</li>`;
     }
     resultHTML += '</ol>';
   
